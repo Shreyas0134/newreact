@@ -948,16 +948,22 @@ import "./App.css";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-import React from 'react'
+import React, { useRef } from 'react'
 import NewAppChild from "./component/NewAppChild";
 
 const App = () => {
+  const newref=useRef();
+  const parentData=()=>
+  {
+           newref.current.childData();
+  }
+  
   return (
     <div>
     <h1>App</h1>
     
-    <button className="btn btn-primary" >this is parent app</button>
-    <NewAppChild/>
+    <button className="btn btn-primary"  onClick={parentData}>this is parent app</button>
+    <NewAppChild ref={newref}/>
     </div>
   )
 }

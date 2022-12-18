@@ -1,13 +1,26 @@
 
-import React from 'react'
+import React, { forwardRef, useImperativeHandle } from 'react'
 
-const NewAppChild = () => {
+const NewAppChild = (props,ref) => {
+    useImperativeHandle(ref,()=>
+    {
+        return {
+            childData
+        }
+    })
+    const childData=()=>
+  {
+    alert('this is child data')
+  } 
+  
+  
+  
   return (
     <div>
     
     
     <h1>NewAppChild</h1>
-    <button className='btn btn-info' >this is child NewAppChild</button>
+    <button className='btn btn-info' onClick={childData}>this is child NewAppChild</button>
 
     
     
@@ -19,7 +32,7 @@ const NewAppChild = () => {
   )
 }
 
-export default NewAppChild
+export default forwardRef(NewAppChild)
 
 
 
