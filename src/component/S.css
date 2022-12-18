@@ -1,0 +1,65 @@
+.Lgnform {
+
+    background-image: linear-gradient(-200deg, #C147E9, #fdf8fe);
+    margin: 100px auto;
+    padding: 100px;
+    width: 50%;
+
+    border: 1px solid #e5e2e2;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px 10px #888888;
+
+
+
+
+}
+
+.form-control {
+
+    margin: 0px 5px 5px 0px;
+    width: 100%;
+    color: #747474;
+    padding: 10px 10px 10px 10px;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    border: 1px solid #55595c;
+    border-radius: 5px;
+    color: #55595c;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    color: #212529;
+    line-height: 2;
+}
+
+.btn {
+    width: 5rem;
+
+    font-family: "Dosis", Sans-serif;
+    text-transform: uppercase;
+
+    background-color: #ff213f;
+    border-width: 1px 1px 1px 1px;
+    border-color: #ff213f;
+    border-radius: 10px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    padding: 0.80rem 1.2rem;
+    border: 0;
+    color: #fff;
+    font-size: .9rem;
+}
+
+a {
+    color: #c33be1;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    float: right;
+    margin-top: 10px;
+
+}
+
+.n {
+
+    color: blueviolet;
+}

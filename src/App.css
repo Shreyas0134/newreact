@@ -1,0 +1,205 @@
+/* /* 
+
+
+.newcss {
+  font-size: 50px;
+  color: aqua;
+  font-style: italic;
+  background-color: aliceblue;
+}
+
+.one {
+  font-family: "Dosis", Sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 4.4px;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #600300;
+  border-radius: 57px 57px 57px 57px;
+  padding: 20px 30px 20px 28px;
+  margin: 40px 400px 30px 20px;
+}
+
+.one:hover {
+  transition: all 0.5s;
+  border-style: groove;
+  border-width: 1px 1px 1px 1px;
+  background-color: white;
+  color: red;
+  border-radius: 57px 57px 57px 57px;
+  padding: 20px 28px 20px 28px;
+  border-width: 5px 10px 0px 10px;
+}
+
+.two {
+  font-family: "Dosis", Sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 4.4px;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #600300;
+  border-radius: 57px 57px 57px 57px;
+  padding: 20px 30px 20px 28px;
+  margin: 40px 400px 30px 20px;
+}
+
+.two:hover {
+  transition: all 0.5s;
+  border-style: groove;
+  border-width: 1px 1px 1px 1px;
+  background-color: white;
+  color: red;
+  border-radius: 57px 57px 57px 57px;
+  padding: 20px 28px 20px 28px;
+  border-width: 5px 10px 0px 10px;
+} */
+
+
+/* body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(90deg, #C147E9, #fdf8fe);
+}
+
+
+
+
+p
+{
+  
+  position: absolute;
+  top: 27%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-family: "Dosis", Sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1em;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  color: #fefefe;
+  -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(35%, transparent), to(rgb(0, 0, 0)));
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgb#C147E9, 0 0 25px rgb#fdf8fe, 0 0 5px;
+  
+}
+
+
+
+
+
+.custom-shape-divider-top-1669901121 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1669901121 svg {
+  position: relative;
+  display: block;
+  width: calc(135% + 1.3px);
+  height: 183px;
+}
+
+.custom-shape-divider-top-1669901121 .shape-fill {
+  fill: #fbfbfb;
+}
+
+.bg {
+  height: 100vh;
+  width: 50%;
+}
+
+.qq {
+
+  float: left;
+  margin-top: 20%;
+  height: 60%;
+  width: 30%;
+  left: 5%;
+ 
+ color: #C147E9;
+}
+
+.input {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 65%;
+}
+
+.animated {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 500px;
+  width: 500px;
+}
+
+
+.form {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 40%;
+  left: 60%;
+}
+
+.form-control {
+
+  margin: 0px 5px 0 px 0px;
+  width: 300px;
+  color: rgba(239, 32, 222, 0.322);
+  padding: 10px 10px 10px 10px;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+  border: 1px rgba(239, 32, 222, 0.322);
+  border-radius: 5px;
+  color: rgba(239, 32, 222, 0.322);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  color: #212529;
+  
+}
+
+.btn {
+  width: auto;
+  font-family: "Dosis", Sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  background-color: rgba(239, 32, 222, 0.082);
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0.80rem 1.2rem;
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-size: .9rem;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0.80rem 1.2rem;
+  border: 0;
+  color: rgba(239, 32, 222, 0.322);
+  font-size: .9rem;
+  box-shadow: 0 12px 16px 0 rgba(239, 32, 222, 0.322), 0 17px 50px 0 rgba(239, 32, 222, 0.322);
+  
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+} */
+

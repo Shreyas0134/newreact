@@ -1,0 +1,15 @@
+
+
+.card {
+    position: relative;
+    left: 35rem;
+    top: 5rem;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px -10px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+}
