@@ -787,18 +787,18 @@ import "./App.css";
 
 // const App = () => {
 //   const [state, dispatch] = useReducer(reducer, InitialState)
-  
+
 //   return (
 //     <div>
 //     <h1>{state.count}</h1>
 //     <button  className="btn btn-primary" onClick={()=>{dispatch({type:'one'})}}>click</button>
 //     <button className="btn btn-danger" onClick={()=>{dispatch({type:'two'})}}>click</button>
 //     <button className="btn btn-danger" onClick={()=>{dispatch({type:'three'})}}>click</button>
-    
-//     <button className="btn btn-danger" onClick={()=>{dispatch({type:'four'})}}>click</button>
-    
 
-    
+//     <button className="btn btn-danger" onClick={()=>{dispatch({type:'four'})}}>click</button>
+
+
+
 
 
 //     </div>
@@ -835,8 +835,8 @@ import "./App.css";
 //     <h1>{store.data}</h1>
 //     <button onClick={()=>{dispatch({type:'one'})}}>click</button>
 
-    
-    
+
+
 //     </div>
 //   )
 // }
@@ -862,11 +862,11 @@ import "./App.css";
 
 //     <h1>{state.firstdata}</h1>
 //     <button onClick={newDataVal}>click</button>
-    
 
-    
-    
-    
+
+
+
+
 //     </div>
 //   )
 // }
@@ -904,16 +904,60 @@ import "./App.css";
 // export default App
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// import React from 'react'
+// import NewTask from "./component/NewTask";
+// import ImageTask from "./component/ImageTask";
+
+
+// const App = () => {
+//   return (
+//     <div>
+//      <NewTask/>
+     
+
+
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// import React, { useRef } from 'react'
+// import NewAppChild from "./component/NewAppChild";
+
+// const App = () => {
+//   const newref=useRef();
+//   const parentData=()=>
+//   {
+//          newref.current.childData();
+//   }
+//   return (
+//     <div>======App=====
+    
+//     <button className="btn bnt-primary" onClick={parentData}>click me...</button>
+//     <NewAppChild ref={useRef}/>
+    
+//     </div>
+//   )
+// }
+
+// export default App
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 import React from 'react'
-import FirstEffect from "./component/FirstEffect";
+import NewAppChild from "./component/NewAppChild";
 
 const App = () => {
   return (
     <div>
-    <FirstEffect/>
+    <h1>App</h1>
     
-    
-    
+    <button className="btn btn-primary" >this is parent app</button>
+    <NewAppChild/>
     </div>
   )
 }

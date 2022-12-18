@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 
 const NewEffect = () => {
-    
+
     const [data, setData] = useState('hi');
     const [newData, setNewData] = useState('one')
 
@@ -23,14 +23,12 @@ const NewEffect = () => {
         alert('this is new react')
         setData('hello')
     }
-    const newbtnone=()=>
-    {
+    const newbtnone = () => {
         alert('this is second div first button')
         setNewData('hey second button')
 
     }
-    const btnnewone=()=>
-    {
+    const btnnewone = () => {
         alert('this is seond div second button')
         setNewData('hi second second button')
     }
@@ -43,7 +41,7 @@ const NewEffect = () => {
                 <h1>{data}</h1>
             </div>
 
-                               
+
 
 
             <div>
