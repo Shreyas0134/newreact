@@ -948,25 +948,53 @@ import "./App.css";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-import React, { useRef } from 'react'
-import NewAppChild from "./component/NewAppChild";
+// import React, { useRef } from 'react'
+// import NewAppChild from "./component/NewAppChild";
+
+// const App = () => {
+//   const newref=useRef();
+//   const parentData=()=>
+//   {
+//            newref.current.childData();
+//   }
+  
+//   return (
+//     <div>
+//     <h1>App</h1>
+    
+//     <button className="btn btn-primary"  onClick={parentData}>this is parent app</button>
+//     <NewAppChild ref={newref}/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+import React from 'react'
+import NewTask from "./component/NewTask";
+// import NewAppChild from "./component/NewAppChild";
 
 const App = () => {
-  const newref=useRef();
-  const parentData=()=>
-  {
-           newref.current.childData();
-  }
   
   return (
     <div>
-    <h1>App</h1>
     
-    <button className="btn btn-primary"  onClick={parentData}>this is parent app</button>
-    <NewAppChild ref={newref}/>
+    
+    {/* <button className="btn btn-danger">Parent click</button>
+    <NewAppChild/> */}
+    <NewTask/>
+    
+    
+    
+    
     </div>
   )
 }
 
 export default App
-
