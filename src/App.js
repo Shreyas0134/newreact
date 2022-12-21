@@ -473,12 +473,10 @@ import "./App.css";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 // import React from 'react'
 // import HocFirst from "./component/HocFirst";
 // import HocSecond from "./component/HocSecond";
 // import HocAll from "./component/HocAll";
-
 
 // const App = () => {
 //   return (
@@ -486,7 +484,6 @@ import "./App.css";
 
 //     <HocFirst cmp={HocAll}/>
 //     <HocSecond a={HocAll}/>
-
 
 //     </div>
 //   )
@@ -496,24 +493,18 @@ import "./App.css";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
 // import React from 'react'
 // import NewData from "./component/NewData";
-
 
 // export const App = () => {
 //   return (
 //     <div>
 //     <NewData/>
 
-
 //      </div>
 //   )
 // }
-// export default App  
-
-
+// export default App
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///usestate function...
@@ -527,10 +518,6 @@ import "./App.css";
 //       <h1>{count}</h1>
 //       <button onClick={() => { setCount(23) }}>click </button>
 
-
-
-
-
 //       </div>
 //       )
 // }
@@ -538,7 +525,6 @@ import "./App.css";
 //       export default App
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 //  import React from 'react'
 //  import NewState from './component/NewState';
@@ -556,28 +542,21 @@ import "./App.css";
 //          <DataValid/>
 //          <NewAlert/>
 
-
-
-
-
-
 //          </center>
 //      </div>
 //    )
 //  }
 
-//  export default App 
+//  export default App
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // import React from 'react'
 // import NewCard from "./component/NewCard";
 
-
 // const App = () => {
 //   return (
 //     <div>
 //       <NewCard />
-
 
 //     </div>
 //   )
@@ -589,7 +568,6 @@ import "./App.css";
 // import React from 'react'
 // // import Calling from "./Revision/Calling";
 // import Calldiff from "./Revision/Calldiff";
-
 
 // const App = () => {
 //   return (
@@ -608,7 +586,6 @@ import "./App.css";
 // import useIncrease from "./component/useIncrease";
 // import FirstImg from "./component/FirstImg";
 // import SecondImg from "./component/SecondImg";
-
 
 // const App = () => {
 //   const [newlist, setNewlist] =React.useState(false)
@@ -630,7 +607,6 @@ import "./App.css";
 //         :<SecondImg />
 //     }
 
-
 //     </div>
 
 //   )
@@ -640,17 +616,15 @@ import "./App.css";
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // import React from 'react'
 
-
 // const App = () => {
 //   const [newImg, setNewImg] = React.useState(false)
 //   const [newImg1, setNewImg1] = React.useState(false)
 //   const [newImg2, setNewImg2] = React.useState(false)
 //   const [newImg3, setNewImg3] = React.useState(false)
 
-
 //   const newabc = () => {
 //     setNewImg(true)
-//     setNewImg1(false)  
+//     setNewImg1(false)
 //     setNewImg2(false)
 //     setNewImg3(false)
 //   }
@@ -715,7 +689,6 @@ import "./App.css";
 
 // export default App
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // import React from "react";
 // import  { useReducer } from 'react'
@@ -739,8 +712,6 @@ import "./App.css";
 //       <h1>{state.count}</h1>
 
 //       <button onClick={() => { dispatch({ type: 'increase' }) }}>click</button>
-
-
 
 //     </div>
 //   )
@@ -773,8 +744,6 @@ import "./App.css";
 
 //       <button onClick={() => { dispatch({ type: 'decrease' }) }}>click</button>
 
-
-
 //     </div>
 //   )
 // }
@@ -797,10 +766,6 @@ import "./App.css";
 
 //     <button className="btn btn-danger" onClick={()=>{dispatch({type:'four'})}}>click</button>
 
-
-
-
-
 //     </div>
 //   )
 // }
@@ -808,7 +773,6 @@ import "./App.css";
 // export default App
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 // import React, { useReducer } from 'react'
 
@@ -835,8 +799,6 @@ import "./App.css";
 //     <h1>{store.data}</h1>
 //     <button onClick={()=>{dispatch({type:'one'})}}>click</button>
 
-
-
 //     </div>
 //   )
 // }
@@ -848,7 +810,6 @@ import "./App.css";
 // import {initialState} from './component/AllReducer';
 // import {reducer} from './component/AllValue'
 
-
 // const App = () => {
 
 //   const [state,dispatch] =  useReducer(reducer,initialState)
@@ -859,13 +820,8 @@ import "./App.css";
 //   return (
 //     <div>
 
-
 //     <h1>{state.firstdata}</h1>
 //     <button onClick={newDataVal}>click</button>
-
-
-
-
 
 //     </div>
 //   )
@@ -877,10 +833,6 @@ import "./App.css";
 // import React ,{useReducer} from 'react'
 // import {reducer} from './component/AllReducer'
 // import { initialState } from "./component/AllValue";
-
-
-
-
 
 // const App = () => {
 //   const [state,dispatch] = useReducer(reducer,initialState)
@@ -908,14 +860,10 @@ import "./App.css";
 // import NewTask from "./component/NewTask";
 // import ImageTask from "./component/ImageTask";
 
-
 // const App = () => {
 //   return (
 //     <div>
 //      <NewTask/>
-     
-
-
 
 //     </div>
 //   )
@@ -936,10 +884,10 @@ import "./App.css";
 //   }
 //   return (
 //     <div>======App=====
-    
+
 //     <button className="btn bnt-primary" onClick={parentData}>click me...</button>
 //     <NewAppChild ref={useRef}/>
-    
+
 //     </div>
 //   )
 // }
@@ -957,11 +905,11 @@ import "./App.css";
 //   {
 //            newref.current.childData();
 //   }
-  
+
 //   return (
 //     <div>
 //     <h1>App</h1>
-    
+
 //     <button className="btn btn-primary"  onClick={parentData}>this is parent app</button>
 //     <NewAppChild ref={newref}/>
 //     </div>
@@ -972,29 +920,49 @@ import "./App.css";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// import React from 'react'
+// import NewTask from "./component/NewTask";
+// // import NewAppChild from "./component/NewAppChild";
 
+// const App = () => {
 
+//   return (
+//     <div>
 
+//     {/* <button className="btn btn-danger">Parent click</button>
+//     <NewAppChild/> */}
+//     <NewTask/>
 
-import React from 'react'
-import NewTask from "./component/NewTask";
-// import NewAppChild from "./component/NewAppChild";
+//     </div>
+//   )
+// }
+
+// export default App
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./Routing/Layout";
+import Home from "./Routing/Home";
+import Contact from "./Routing/Contact";
+import NoPage from "./Routing/NoPage";
 
 const App = () => {
-  
   return (
     <div>
-    
-    
-    {/* <button className="btn btn-danger">Parent click</button>
-    <NewAppChild/> */}
-    <NewTask/>
-    
-    
-    
-    
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+          
+          
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
