@@ -1,11 +1,15 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link , useNavigate} from "react-router-dom";
+
 
 const NoPage = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div>
-      NoPage
-      <button>This is nopage component</button>
+      <h1>=========NoPage======</h1>
+      <button className="btn btn-danger" onClick={()=>{navigate('/')}}>Go back to home page</button>
       <ul>
         <li>
           <Link to="/">Go back</Link>
