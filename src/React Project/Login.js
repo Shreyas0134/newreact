@@ -1,5 +1,5 @@
 import React from "react";
-import './project.css'
+import './login.css'
 import photo from "./Tablet login-amico.svg";
 
 
