@@ -1,12 +1,13 @@
 //import { compose } from '@mui/system';
 
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import BootAll from './component/BootAll.js';
 //import FontIcons from './component/FontIcons.js';
-//import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import "./App.css";
+// import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+// import "./App.css";
 
-//import photo from './image/lll.svg';
+// import photo from './image/logo.gif'
+
 // import NewRef from './component/NewRef';
 //import DyamicChange from './component/DynamicChange';
 
@@ -56,7 +57,7 @@ import "./App.css";
 
 // export default App;
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //getting the value from this to another file using props
 
@@ -259,153 +260,17 @@ import "./App.css";
 //  const App = () => {
 
 //    return (
-// //     <div>
-// //       <h1>====== App ======</h1>
-// //       <button className='btn btn-primary' style={{ margin: '1rem', color: 'black' }}>Click Me</button>
-// //       <BootAll />
-// //       <FontIcons />
+//     <div>
+//       <h1>====== App ======</h1>
+//       <button className='btn btn-primary' style={{ margin: '1rem', color: 'black' }}>Click Me</button>
+//       <BootAll />
+//       <FontIcons />
 
-// //     </div>
+//     </div>
+//    )}
+//    export default App;
 
-// const App = () => {
-//   var fname, lname, cname, ename, phno;
-//   const fn = (event) => {
-
-//     fname = event.target.value;
-//     console.log('This is the first name==>', fname);
-
-//   }
-//   const ln = (event) => {
-
-//     lname = event.target.value;
-//     console.log('This is the last name==>', lname);
-
-//   }
-//   const cn = (event) => {
-
-//     cname = event.target.value;
-//     console.log('This is the company name==>', cname);
-
-//   }
-//   const en = (event) => {
-
-//     ename = event.target.value;
-//     console.log('This is the email==>', ename);
-
-//   }
-//   const ph = (event) => {
-
-//     phno = event.target.value;
-//     console.log('This is Phone number==>', phno);
-
-//   }
-
-//   function validate() {
-//     var a = document.getElementById('t1').value;
-//     var b = document.getElementById('t2').value;
-//     var c = document.getElementById('t3').value;
-//     var d = document.getElementById('t4').value;
-//     var e = document.getElementById('t5').value;
-//     if (a === '' || b === '' || c === '' || d === '' || e === '') {
-
-//       alert('All fields are required');
-//     }
-
-//     if (!a.match(/^[A-Za-z]+$/)) {
-//       alert("Please enter name");
-//     }
-//     else
-//       if (!b.match(/^[A-Za-z]+$/)) {
-//         alert("Please enter last name");
-//       }
-//       else
-//         if (!c.match(/^[A-Za-z]+$/))
-//         {
-//           alert('please enter company name');
-//         }
-//         else if (!d.match(/^[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]+$/)) {
-
-//           alert("please enter valid email");
-//         }
-//         else if (!e.match(/^[0-9]{10}$/)) {
-//           alert("please enter valid phone number");
-//         }
-
-//         else {
-//           alert('Form submitted successfully');
-//         }
-//   }
-
-//   return (
-//     <center>
-//       <div >
-
-//         <p>Registration form</p>
-
-//         <div class="custom-shape-divider-top-1669901121">
-//           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-//             <path
-//               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-//               class="shape-fill"></path>
-//           </svg>
-//         </div>
-
-//         <img src={photo} className='qq' />
-
-//         {/* <FontAwesomeIcon icon={faFacebook} style={{ height: '10rem', color: 'blue' }} /> */}
-//         {/* <h1>Registration  page</h1> */}
-//         <form>
-//           <div class="row" style={{width:'auto'}}>
-//             <div class="col">
-//               <lable style={{ float: 'left', margin: '30% 1% 0% 10%' }}>Name :</lable>
-//               <input type="text" id='t1' class="form-control" placeholder="First name" onChange={fn} style={{ height: 'auto', width: 'auto', display: 'inline-block', float: 'left', margin: '29% 1% 1% 1%' }} />
-//               <input type="text" id='t2' class="form-control" placeholder="Last name" onChange={ln} style={{ height: 'auto', width: 'auto', display: 'inline-block', float: 'left', margin: '29% 1% 1% 1%' }} />
-//             </div>
-//           </div>
-//           <div class="form-group">
-//             <label for="inputAddress" style={{ float: 'left', margin: '1% 0% 0% 7%' }}>company :</label>
-//             <input type="text" class="form-control" placeholder='Company name' id="t3" onChange={cn} style={{ height: '3rem', width: '29%', display: 'inline-block', float: 'left', margin: '.5% 1% 1% 0.5%' }} /><br></br><br></br><br></br>
-//           </div>
-//             <div class="form-group">
-//               <label for="inputEmail3" style={{float: 'left',margin:'1% 1% 1% 7% ' }}>Email :</label>
-//               <input type="email" class="form-control" id="t4" placeholder="Email" onChange={en} style={{ height: '3rem', width: 'auto', display: 'inline-block',float:'left',margin:'0% auto 1% 1.5%' }} />
-//             </div><br></br><br></br><br></br>
-//             <div>
-//               <lable style={{float:'left', margin:'1% 1% 0% 7%'}}>Phone :</lable>
-//               <input type="number" id='t5' class="form-control" placeholder="Phone number" required maxLength={10} onChange={ph} style={{ height: '3rem', width: 'auto', display: 'inline-block',float:'left',margin:'0% 0% 0% 1%' }} />
-//             </div><br></br><br></br><br></br>
-
-//             <div class="form-row align-items-center">
-//               <div class="col-auto my-1" >
-//                 <label class="mr-sm-2" for="inlineFormCustomSelect" style={{float:'left' ,margin:'0% 1% 0% 7%'}}>Subject :</label>
-//                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style={{ width: 'auto', display: 'inline-block', borderRadius: '.5rem',float:'left',margin:'0% 0% 0% 0.5%'}}>
-//                   <option selected>Choose options</option>
-//                   <option value="1">One</option>
-//                   <option value="2">Two</option>
-//                   <option value="3">Three</option>
-//                 </select>
-//               </div>
-//             </div><br></br><br></br>
-//             <lable>Are you an existing customer</lable><br></br>
-//             <div class="custom-control custom-radio" >
-//               <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" />
-//               <label class="custom-control-label" for="customRadio1" style={{marginRight:'5%'}}>Yes</label>
-//               <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" />
-//               <label class="custom-control-label" for="customRadio2" >no</label>
-//             </div><br></br>
-//             <div>
-//               <button type="button" class="btn btn-primary" onClick={validate}>Send</button>
-//             </div>
-
-//         </form>
-
-//       </div>
-//     </center>
-
-//   )
-
-// }
-// export default App;
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -941,30 +806,44 @@ import "./App.css";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// /
 
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./Routing/Layout";
-import Home from "./Routing/Home";
-import Contact from "./Routing/Contact";
-import NoPage from "./Routing/NoPage";
+// import React from "react";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Layout from "./Routing/Layout";
+// import Home from "./Routing/Home";
+// import Contact from "./Routing/Contact";
+// import NoPage from "./Routing/NoPage";
 
+// const App = () => {
+//   return (
+//     <div>
+//       <BrowserRouter>
+//         <Routes>
+//           <Route path="/" element={<Layout />} />
+//           <Route path="/home" element={<Home />} />
+//           <Route path="/contact" element={<Contact />} />
+//           <Route path="*" element={<NoPage />} />
+
+//         </Routes>
+//       </BrowserRouter>
+//     </div>
+//   );
+// };
+
+// export default App;
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+import React from "react";
+
+import Login from "./React Project/Login";
+import MainPage from "./React Project/MainPage";
 
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-          
-          
-        </Routes>
-      </BrowserRouter>
+      {/* <Login /> */}
+      <MainPage/>
     </div>
   );
 };
 
 export default App;
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
