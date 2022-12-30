@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import './project.css'
 import photo from "./Tablet login-amico.svg";
 
 
@@ -29,9 +29,11 @@ const Login = () => {
       window.location.href = "MainPage.js";
     }
   }
+ 
   
 
   return (
+    
     <div>
       <div class="custom-shape-divider-top-1669901121">
         <svg
@@ -46,6 +48,7 @@ const Login = () => {
           ></path>
           </svg>
           </div>
+
         
         <ul class="nav justify-content-end" style={{position:'absolute',top:'2%',left:'5%'  }}>
           <li class="nav-item">

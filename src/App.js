@@ -4,7 +4,7 @@
 //import BootAll from './component/BootAll.js';
 //import FontIcons from './component/FontIcons.js';
 // import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-// import "./App.css";
+
 
 // import photo from './image/logo.gif'
 
