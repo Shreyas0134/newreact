@@ -1,10 +1,9 @@
-//import { compose } from '@mui/system';
+
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import BootAll from './component/BootAll.js';
+// import BootAll from './component/BootAll.js';
 //import FontIcons from './component/FontIcons.js';
 // import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-
 
 // import photo from './image/logo.gif'
 
@@ -832,18 +831,38 @@
 // export default App;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-import React from "react";
+// import React from "react";
 
-import Login from "./React Project/Login";
-import MainPage from "./React Project/MainPage";
+// import Login from "./React Project/Login";
+
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Login />
+     
+      
+//     </div>
+//   );
+// };
+
+// export default App;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import React from 'react'
+
+import MainPage from './React Project/MainPage';
 
 const App = () => {
   return (
     <div>
-      {/* <Login /> */}
-      <MainPage/>
-    </div>
-  );
-};
+    
+       
+       <MainPage/>
 
-export default App;
+    </div>
+  )
+}
+
+export default App
