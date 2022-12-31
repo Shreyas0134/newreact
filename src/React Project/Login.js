@@ -1,5 +1,6 @@
 import React from "react";
-import '../login.css'
+import './login.css';
+
 import photo from "./Tablet login-amico.svg";
 
 
@@ -11,8 +12,15 @@ const Login = () => {
     let b = document.getElementById("form2Example2").value;
     let checkbox = document.querySelector('input[type="checkbox"]');
     
-    if (a === "" || b === "" ) {
-      alert("All fields are required");
+    if (a === "abc@gmail.com" || b === "123456" ) {
+      alert("Form submitted successfully");
+        window.location = "E:\React\newreact\src\React Project\MainPage.js";
+
+
+         
+
+      
+      
     }
 
     else if  (!a.match(/^[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]+$/)) {
@@ -25,8 +33,7 @@ const Login = () => {
       }
     
       else {
-      alert("Form submitted successfully");
-      window.location.href = "MainPage.js";
+      alert('incorrect info')
     }
   }
  

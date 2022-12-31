@@ -1,5 +1,6 @@
-import { React, useState } from "react";
+import "./MainPage.css";
 
+import { React, useState } from "react";
 import { Alert, Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Form } from "react-bootstrap";
@@ -14,8 +15,10 @@ import three from "../image/react.png";
 import { ListGroup } from "react-bootstrap";
 import four from "./shuffle-solid.svg";
 import five from "./magnifying-glass-solid.svg";
+import { ProgressBar } from "react-bootstrap";
 
-import "./MainPage.css";
+
+
 
 const MainPage = () => {
   const [show, setShow] = useState(true);
@@ -23,8 +26,7 @@ const MainPage = () => {
   if (show) {
     return (
       <div>
-            
-            {/* Navigation bar */}
+        {/* /////////////////////////////////////////////// Navigation bar ////////////////////////////////////////////////////////////////// */}
 
         <Navbar bg="light" expand="lg" style={{ Color: "black" }}>
           <Container fluid>
@@ -71,11 +73,11 @@ const MainPage = () => {
               </Form>
             </Navbar.Collapse>
           </Container>
-        </Navbar>   
+        </Navbar>
 
-        {/* close of navigation bar */}
-                   
-           {/* Slider starts here */}
+        {/* ///////////////////////////////////////////// close of navigation bar ///////////////////////////////////////////////////////////// */}
+
+        {/* //////////////////////////////////////////////// Slider starts here //////////////////////////////////////////////////////////////// */}
         <Carousel>
           <Carousel.Item>
             <img
@@ -119,17 +121,22 @@ const MainPage = () => {
           </Carousel.Item>
         </Carousel>
         <br></br>
+
+        {/* ///////////////////////////////////////////////////////// Slider ends here ////////////////////////////////////////////////////////////// */}
+
+        {/* //////////////////////////////////////////////////////////// List group starts here //////////////////////////////////////////////////////// */}
         <ListGroup
           style={{
             float: "left",
-            marginLeft: "4rem",
+            marginTop: "0rem",
+            marginLeft: "1rem",
             height: "40%",
             width: "17rem",
           }}
         >
           <strong>
             <ListGroup.Item>
-              <img src={four} style={{ height: "1rem", width: "1rem" }} />
+              <img src={four} style={{ height: "1rem", width: "1rem", margin: '0 5px 0 0 ' }} />
               Completely synergize
             </ListGroup.Item>
           </strong>
@@ -140,31 +147,225 @@ const MainPage = () => {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup>
 
-        {/* Slider ends here */}
+        {/* //////////////////////////////////////////// List group ends here///////////////////////////////////////////////////////////// */}
 
-        {/* Alert bar starts here */}
+        {/* ////////////////////////////////////////////// Alert bar starts here////////////////////////////////////////////////////// */}
 
-        <Alert variant="danger" onClose={() => setShow(false)} dismissible style={{margin:'0rem 2rem 0rem 2rem',width:'50%',float:'left'}} >
+        <Alert
+          variant="danger"
+          onClose={() => setShow(false)}
+          dismissible
+          style={{ margin: "0rem 1rem 0rem 2rem", width: "50%", float: "left" }}
+        >
           <span>
             <b>synergize :</b>Seamlessly visualize quality intellectual capital!
           </span>
-          </Alert>
-          
-       
+        </Alert>
+        {/* ////////////////////////////////////////////// Alert bar Ends here////////////////////////////////////////////////////// */}
 
-        {/* Alert Bar ends here */}
+        {/* ////////////////////////////////////////////////////// Search bar starts here ////////////////////////////////////////////////////////  */}
 
-        {/* Search bar starts here */}
-        <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
+        <Form className="d-flex" style={{ display: "flex" }}>
+          <Form.Control
+            type="search"
+            placeholder="Search"
+            className="me-2"
+            aria-label="Search"
+          />
+          <Button variant="outline-success">
+            <img src={five} style={{ height: "1rem", width: "1rem" }} /> Search
+          </Button>
+        </Form>
+
+        {/* ///////////////////////////////////////////////// Search bar ends here ////////////////////////////////////////////////////////   */}
+
+        {/* ///////////////////////////////////////////////// News box starts here ////////////////////////////////////////////////////////    */}
+
+        <Container style={{ width: 'auto' }}>
+          <img
+            src={one}
+            style={{
+              height: "7rem",
+              width: "7rem",
+              margin: "2rem 0rem 0rem 2rem",
+              float: "left",
+            }}
+          />
+          <a
+            href="#"
+            style={{
+              textDecoration: "none",
+              margin: "1.5rem 0rem 0rem 2rem",
+              float: "left",
+              fontSize: "2rem",
+              width: 'auto',
+            }}
+          >
+            <strong>Premier Niche Markets</strong></a>
+          <span style={{ width: '45%', float: 'left', margin: '0 0 0 2rem' }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+            nunc ut aliquam tincidunt, nunc elit aliquam mauris, ut aliquam massa
+            nisl quis neque. Sed euismod, nunc ut aliquam tincidunt, nunc elit
+            aliquam mauris, ut aliquam massa nisl quis neque<br></br>.</span>
+
+
+
+        </Container>
+
+        {/* /////////////////////////////////////////////////// news box ends here  ////////////////////////////////////////////////////////  */}
+
+        {/* /////////////////////////////////////////////////// Progress bar box starts here /////////////////////////////////////////////// */}
+
+        <ListGroup
+          style={{
+
+            float: "Right",
+            width: "27.5%",
+            height: "30rem",
+          }}
+        >
+          <strong>
+            <ListGroup.Item>
+              <img src={four} style={{ height: "1rem", width: "1rem", margin: '0 5px  0' }} />
+              Drmatically Engaged
+            </ListGroup.Item>
+          </strong>
+          <ListGroup.Item>
+            <ProgressBar
+              variant="success"
+              now={100}
+              label={"100% Proactively Emivisioned"}
             />
-            <Button variant="outline-success"><img src={five} style={{ height: "1rem", width: "1rem" }} />  Search</Button>
-            </Form>
+            <br></br>
+            <ProgressBar
+              variant="info"
+              now={60}
+              label={"80% Objectively innoverted"}
+            />
+            <br></br>
+            <ProgressBar variant="warning" now={45} label={"45% Protailed"} />
+            <br></br>
+            <ProgressBar variant="danger" now={35} label={"35% Done"} />
+            <br></br>
+          </ListGroup.Item>
+        </ListGroup>
+
+        {/* /////////////////////////////////////////////////// Progress bar box ends here /////////////////////////////////////////////// */}
+
+        {/* /////////////////////////////////////////////////// 2nd List group starts here /////////////////////////////////////////////// */}
+        <ListGroup
+          style={{
+            margin: "0rem 0rem 0rem 1rem",
+            width: '18%',
+            float: 'left'
+
+
+          }}
+        >
+          <strong>
+            <ListGroup.Item>
+              <img src={four} style={{ height: "1rem", width: "1rem", margin: '0 5px 0 0 ' }} />
+              Completely synergize
+            </ListGroup.Item>
+          </strong>
+          <ListGroup.Item>Cras justo odio</ListGroup.Item>
+          <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+          <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+          <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+          <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+        </ListGroup>
+
+        {/* /////////////////////////////////////////////////// 2nd List group ends here /////////////////////////////////////////////// */}
+
+        {/* /////////////////////////////////////////////////// 2nd news box starts here /////////////////////////////////////////////// */}
+
+
+        <div style={{ width: 'auto' }}>
+          <Container style={{ width: 'auto' }}>
+            <img
+              src={one}
+              style={{
+                height: "7rem",
+                width: "7rem",
+                margin: "3rem 0rem 0rem 2rem",
+                float: "left",
+              }}
+            />
+            <a
+              href="#"
+              style={{
+                textDecoration: "none",
+                margin: "2rem 0rem 0rem 2rem",
+                float: "left",
+                fontSize: "2rem",
+                width: 'auto',
+              }}
+            >
+              <strong>Premier Niche Markets</strong></a>
+            <span style={{ width: '45%', float: 'left', margin: '0 2rem 0 2rem' }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+              nunc ut aliquam tincidunt, nunc elit aliquam mauris, ut aliquam massa
+              nisl quis neque. Sed euismod, nunc ut aliquam tincidunt, nunc elit
+              aliquam mauris, ut aliquam massa nisl quis neque.</span>
+              </Container>
+
+              <ListGroup
+          style={{
+            margin: "0rem 0rem 0rem 0rem",
+            width: '25%',
+           float: 'right',
+           position: 'absolute',
+           left:'72.5%',
+           top:'125%'
+           
+            
+            
+
+
+
+          }}
+        >
+          <strong>
+            <ListGroup.Item>
+              <img src={four} style={{ height: "1rem", width: "1rem", margin: '0 5px 0 0 ' }} />
+              Completely synergize
+            </ListGroup.Item>
+          </strong>
+          <ListGroup.Item>Cras justo odio</ListGroup.Item>
+          <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+          <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+          <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+          <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+        </ListGroup>
+
+
+        </div>
+
+        {/* /////////////////////////////////////////////////// 2nd news box ends here /////////////////////////////////////////////// */}
+
+
+
        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     );
   }

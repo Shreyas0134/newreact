@@ -831,35 +831,18 @@
 // export default App;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// import React from "react";
 
-// import Login from "./React Project/Login";
-
-
-
-// const App = () => {
-//   return (
-//     <div>
-//       <Login />
-     
-      
-//     </div>
-//   );
-// };
-
-// export default App;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 import React from 'react'
-
+// import Login from './React Project/Login';
 import MainPage from './React Project/MainPage';
 
 const App = () => {
   return (
     <div>
-    
-       
-       <MainPage/>
+    {/* <Login/> */}
+    <MainPage/>
 
     </div>
   )
