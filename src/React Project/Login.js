@@ -1,31 +1,41 @@
-import React from "react";
+import {React} from "react";
+
 import './login.css';
 
 import photo from "./Tablet login-amico.svg";
+// import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
-  
 
-  function validate() {
+  // const navigate = useNavigate();
+
+    function validate() {
+      
     let a = document.getElementById("form2Example1").value;
     let b = document.getElementById("form2Example2").value;
     let checkbox = document.querySelector('input[type="checkbox"]');
+
     
-    if (a === "abc@gmail.com" || b === "123456" ) {
+    
+    if (a === "abc@gmail.com" && b === "123456" ) {
       alert("Form submitted successfully");
-        window.location = "E:\React\newreact\src\React Project\MainPage.js";
+      // navigate("/MainPage");
 
-
-         
-
-      
-      
-    }
+        
+      }
+     else  if (a === "" || b === "") {
+        alert("please fill the form");
+        
+      }
 
     else if  (!a.match(/^[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]+$/)) {
       alert("please enter valid email");
     
+    }
+    else if (b.length < 6) {
+
+      alert("password must be 6 characters long");
     }
     else if
       (!checkbox.checked) {
@@ -85,7 +95,7 @@ const Login = () => {
           style={{ width: "30%", height: "50%", marginLeft: "3%" }}
         />
 
-        <form className="form">
+        <form className="form" onSubmit={validate}>
           {/* <!-- Email input --> */}
           <div class="form-outline mb-4">
             <label class="form-label"  >

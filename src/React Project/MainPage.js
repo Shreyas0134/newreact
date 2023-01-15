@@ -1,7 +1,7 @@
 import "./MainPage.css";
 
-import { React } from "react";
-import { Button, Alert } from "react-bootstrap";
+import { React, useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
@@ -16,8 +16,25 @@ import { ListGroup } from "react-bootstrap";
 import four from "./shuffle-solid.svg";
 import five from "./magnifying-glass-solid.svg";
 import { ProgressBar } from "react-bootstrap";
+import axios from "axios";
 
 const MainPage = () => {
+
+  const [data,setData]=useState()
+
+  useEffect(()=>{
+
+    axios.get('https://jsonplaceholder.typicode.com/users').then((res)=>{
+
+      setData(res.data)
+    })
+
+
+  })
+
+;
+
+  
   return (
     <div>
       {/* /////////////////////////////////////////////// Navigation bar ////////////////////////////////////////////////////////////////// */}
@@ -137,7 +154,7 @@ const MainPage = () => {
           />
           Completely synergize
         </li>
-        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">{data[0].name}</li>
         <li class="list-group-item">Dapibus ac facilisis in</li>
         <li class="list-group-item">Morbi leo risus</li>
         <li class="list-group-item">Porta ac consectetur ac</li>
