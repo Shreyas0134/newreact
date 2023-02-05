@@ -835,7 +835,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // import React from 'react'
-// // import Login from './React Project/Login';
+// import Login from './React Project/Login';
 // import MainPage from './React Project/MainPage';
 
 // const App = () => {
@@ -852,20 +852,162 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-import React from 'react'
-// import NewJason from './Jason examples/NewJason';
-import Login from './React Project/Login';
-// import { Router } from 'react-router';
+// import React from 'react'
+// // import NewJason from './Jason examples/NewJason';
+// import Login from './React Project/Login';
+// // import { Router } from 'react-router';
 
+
+// const App = () => {
+//   return (
+//     <div>
+        
+//         {/* <NewJason/> */}
+       
+//         <Login/>
+      
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// import One from './Props/One';
+
+// const app=()=>
+// {
+//   return(
+//     <div>
+//     <One/>
+    
+         
+
+//     </div>
+//   )
+// }
+// export default app;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+// import React from 'react';
+
+// const app=()=>
+// {
+//   return(
+//     <div>
+//       <h1>hello there</h1>
+//     </div>
+//   )
+// }
+
+// export default app;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// import React from 'react'
+// // import NewState from './component/NewState';
+// // import NewEffect from './component/NewEffect';
+// import FirstEffect from './component/FirstEffect';
+
+
+
+
+// const App = () => {
+//   return (
+//     <div>
+//     <h1>
+//      <FirstEffect/>
+//      {/* <NewState/> */}
+     
+      
+//     </h1>
+    
+    
+//     </div>
+//   )
+// }
+
+// export default App;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// import React from 'react'
+// import FirstF from './New Revision/FirstF'
+
+
+// const App = () => {
+//   return (
+//     <div>
+//     <FirstF/>
+   
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// import React from 'react'
+
+// const App = () => {
+//   return (
+//     <div>App</div>
+//   )
+// }
+
+// const NewApp = () => {
+//       return(
+//      <div>
+//       console.log('hello')
+//      </div>
+
+
+//       )
+// }
+
+// export default {App,NewApp} 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// const App = () => {
+//   const items = [
+//     { id: 1, text: "Item 1" },
+//     { id: 2, text: "Item 2" },
+//     { id: 3, text: "Item 3" }
+//   ];
+//   return (
+//     <div>
+//     <ul>
+//     {items.map(item => (
+//       <li key={item.id}>{item.text}</li>
+     
+//     ))}
+//   </ul>
+//   </div>
+// )}
+
+// export default App
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+import React from 'react'
+import LearnState from './state and effects/LearnState'
 
 const App = () => {
   return (
     <div>
-        
-        {/* <NewJason/> */}
-       
-        <Login/>
-      
+    <LearnState/>
+ 
+   
 
     </div>
   )

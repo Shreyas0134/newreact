@@ -8,6 +8,13 @@ function login() {
     }
     else {
         alert("Login failed");
+    
     }
 }
         
+
+
+//embeed two component into one
+
+    
+         

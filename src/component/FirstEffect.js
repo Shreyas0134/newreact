@@ -3,25 +3,22 @@ import React, { useEffect, useState } from 'react'
 
 const FirstEffect = () => {
 
-    const [data, setData] = useState('one');
+   const [data,setData]=useState('hi there')
 
-    useEffect(() => {
-
-        alert('hi there its new')
-    }, [])
-
-    const newcall = () => {
-        setData('two')
-
-
-
-
-    }
-    const newcalldata = () => {
-        setData('three')
+   useEffect=() => {
+         alert('I am in useEffect');
+            
     }
 
+    const newcall=()=>{
+        setData('shreyas');
+    }
+    const newcalldata=()=>
+    {
+        setData('karandikar');
+    }
 
+     
     return (
         <div>
             <h1>======FirstEffect=====</h1>

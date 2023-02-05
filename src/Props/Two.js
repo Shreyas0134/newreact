@@ -5,7 +5,7 @@ const Two = (props) => {
     <div>
 
 
-        <h1>The data from another file is<br></br>{props.abc.two}</h1>
+        <h1>The data from another file is<br></br>{props.pqr.two}</h1>
     </div>
   )
 }

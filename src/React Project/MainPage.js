@@ -11,7 +11,7 @@ import photo from "./earth-americas-solid.svg";
 import { Carousel } from "react-bootstrap";
 import one from "../image/a.jpeg";
 import two from "../image/b.jpeg";
-// import three from "../image/react.png";
+//  import three from "../image/react.png";
 import { ListGroup } from "react-bootstrap";
 import four from "./shuffle-solid.svg";
 import five from "./magnifying-glass-solid.svg";
@@ -20,21 +20,21 @@ import axios from "axios";
 
 const MainPage = () => {
 
-  const [data,setData]=useState()
+  const [data, setData] = useState()
 
-  useEffect(()=>{
+  useEffect(() => {
 
-    axios.get('https://jsonplaceholder.typicode.com/users').then((res)=>{
-
+    axios.get('https://dummyjson.com/products').then((res) => 
+    {
       setData(res.data)
     })
 
 
   })
 
-;
 
-  
+
+
   return (
     <div>
       {/* /////////////////////////////////////////////// Navigation bar ////////////////////////////////////////////////////////////////// */}
@@ -154,7 +154,7 @@ const MainPage = () => {
           />
           Completely synergize
         </li>
-        <li class="list-group-item">{data[0].name}</li>
+        {<li class="list-group-item">{data[0].name}</li>}
         <li class="list-group-item">Dapibus ac facilisis in</li>
         <li class="list-group-item">Morbi leo risus</li>
         <li class="list-group-item">Porta ac consectetur ac</li>
@@ -369,5 +369,5 @@ const MainPage = () => {
       {/* /////////////////////////////////////////////////// 2nd news box ends here /////////////////////////////////////////////// */}
     </div>
   );
-};
+}
 export default MainPage;

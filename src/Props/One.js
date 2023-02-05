@@ -4,15 +4,13 @@ import Two from './Two'
 const One = () => {
 
 
-    let obj={
-        one:'shreyas',
-        two:2
-    }
+    let abc={one:'shreyas',two:'karandikar'}
+    
   return (
     <div>
-           <h1>{obj.one}</h1>
-           
-           <Two abc={obj}/>
+          <h1>{abc.one}</h1>
+          
+          <Two pqr={abc}/>
 
          
 

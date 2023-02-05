@@ -8,7 +8,7 @@ import photo from "./Tablet login-amico.svg";
 
 const Login = () => {
 
-  // const navigate = useNavigate();
+  //  const navigate = useNavigate();
 
     function validate() {
       
@@ -20,7 +20,8 @@ const Login = () => {
     
     if (a === "abc@gmail.com" && b === "123456" ) {
       alert("Form submitted successfully");
-      // navigate("/MainPage");
+          //  navigate("/MainPage");
+      
 
         
       }
@@ -67,7 +68,7 @@ const Login = () => {
           </div>
 
         
-        <ul class="nav justify-content-end" style={{position:'absolute',top:'2%',left:'5%'  }}>
+        <ul class="nav justify-content-end" style={{position:'absolute',top:'2%',left:'5%'     }}>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="login.js" style={{color:'black'}}>
              Home
@@ -122,10 +123,11 @@ const Login = () => {
                   type="checkbox"
                   value=""
                   id="form2Example31"
+                  
                 />
                 <label class="form-check-label" for="form2Example31">
-                  {" "}
-                  Remember me{" "}
+                  
+                  Remember me
                 </label>
               </div>
             </div>
